@@ -1,0 +1,36 @@
+{% comment %}
+  Homepage "Research" card with All / Publications / Under Review / Working Papers filters.
+  Items come from the publications collection; `category` is "publication", "under_review", or "working".
+{% endcomment %}
+{% assign items = include.publications %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl" id="research-card">
+    <div class="d-flex flex-wrap align-items-center border-bottom border-gray p-3">
+        <h6 class="mb-0 mr-auto"><i class="fas fa-flask"></i> Research</h6>
+        <div class="nav nav-pills small research-filter" role="tablist">
+            <a class="nav-link active py-1 px-2" href="#" data-filter="all">All</a>
+            <a class="nav-link py-1 px-2" href="#" data-filter="publication">Publications</a>
+            <a class="nav-link py-1 px-2" href="#" data-filter="under_review">Under Review</a>
+            <a class="nav-link py-1 px-2" href="#" data-filter="working">Working Papers</a>
+        </div>
+    </div>
+    {% for item in items %}
+    <div class="research-item" data-category="{{ item.category | default: 'publication' }}">
+        {% include widgets/publication_item.html item=item first=false last=false %}
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+document.querySelectorAll("#research-card .research-filter .nav-link").forEach(function (tab) {
+    tab.addEventListener("click", function (e) {
+        e.preventDefault();
+        var filter = tab.getAttribute("data-filter");
+        document.querySelectorAll("#research-card .research-filter .nav-link").forEach(function (t) {
+            t.classList.toggle("active", t === tab);
+        });
+        document.querySelectorAll("#research-card .research-item").forEach(function (item) {
+            item.style.display = (filter === "all" || item.getAttribute("data-category") === filter) ? "" : "none";
+        });
+    });
+});
+</script>

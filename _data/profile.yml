@@ -1,0 +1,57 @@
+primary_name: "Zhengnan Ma"
+secondary_name: ""
+navbar_name: "Zhengnan Ma"
+
+positions:
+- name: Predoctoral Research Fellow
+- name: '<a href="https://www.kellogg.northwestern.edu/academics-research/science-of-science/" target="_blank">CSSI</a>, Northwestern University'
+
+
+email: "zhengnan.ma@kellogg.northwestern.edu"
+# cv_link: /assets/files/Zhengnan_Ma_CV.pdf  # CV is linked from the navbar instead
+gscholar: 014RNawAAAAJ
+github: Ashley0703
+linkedin: zhengnan-ma-02ab8924b
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+# TODO: add a research-interests paragraph to short_bio.
+short_bio: >-
+  <p>
+    I am a Predoctoral Research Fellow at <a href="https://www.kellogg.northwestern.edu/academics-research/science-of-science/" target="_blank">CSSI</a>, Northwestern University, where I am fortunate to be advised by <a href="https://www.dashunwang.com/" target="_blank">Prof. Dashun Wang</a>.
+    I received my M.S. in Computer Science from Northwestern University in 2025
+    and my B.S. from Shanghai University of Finance and Economics in 2024.
+    I was also a visiting student in computer science at UC Berkeley in 2023.
+  </p>
+
+portrait_url: /assets/images/photos/portrait_zhengnan_full.jpg
+# portrait_caption: ""
+
+education:
+- name: Northwestern University
+  position: M.S. in Computer Science
+  date: Sep. 2024 - Dec. 2025
+- name: University of California, Berkeley
+  position: Berkeley Global Access Program in Computer Science
+  date: Aug. 2022 - Aug. 2023
+- name: Shanghai University of Finance and Economics
+  position: B.S. in Banking and International Finance
+  date: Sep. 2020 - Jun. 2024
+
+experience:
+- name: CSSI, Northwestern University
+  position: "Predoctoral Research Fellow (Advisor: Prof. Dashun Wang)"
+  date: Nov. 2025 - present
+- name: Northwestern Institute on Complex Systems
+  position: "Research Assistant (Advisor: Prof. Brian Uzzi)"
+  date: Apr. 2025 - Nov. 2025
+- name: Department of Information Science, Cornell University
+  position: "Research Intern, remote (Advisor: Prof. Yian Yin)"
+  date: Jul. 2025 - Oct. 2025
+- name: Department of Computer Science, New York University
+  position: "Research Assistant (Advisor: Prof. Qiaoyu Tan)"
+  date: Sep. 2023 - Sep. 2024
+
+awards:
+- name: People's Scholarship, Shanghai University of Finance and Economics
+  date: ""
