@@ -10,7 +10,7 @@
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid" 
-                                style="max-width: 85%;" 
+                                style="max-width: 100%;" 
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-center h4">
-                        {{ site.data.profile.primary_name }}
+                        {{ site.data.profile.primary_name }}{% if site.data.profile.secondary_name != "" %}<small class="d-block mt-1 text-profile-secondary-name" lang="zh-CN">{{ site.data.profile.secondary_name }}</small>{% endif %}
                     </div>
                 </div>
 

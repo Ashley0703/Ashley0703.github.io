@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+.text-profile-secondary-name {
+    font-family: "Ma Shan Zheng", cursive;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 .text-profile-position {
     font-weight: 400;
 }
